@@ -39,7 +39,10 @@ export const Navigation = () => {
               <Route key={path} path={path} element={<Component />} />
             ))}
             {/* 👇 Esta es la diferencia */}
-            <Route path="/" element={<Navigate to={routes[0].path} />} />
+            <Route
+              path="/"
+              element={<Navigate to={routes[0].path} replace />}
+            />
           </Routes>
         </div>
       </Router>

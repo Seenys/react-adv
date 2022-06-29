@@ -1,7 +1,11 @@
 import React from "react";
 
 const LazyPage1 = () => {
-  return <div>LazyPage1</div>;
+  return (
+    <>
+      <h1>Lazy</h1>
+    </>
+  );
 };
 
 export default LazyPage1;
