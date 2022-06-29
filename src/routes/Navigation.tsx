@@ -8,7 +8,7 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import routes from "./index";
+import { routes } from "./routes";
 
 import logo from "../logo.svg";
 
@@ -35,7 +35,7 @@ export const Navigation = () => {
           </nav>
 
           <Routes>
-            {routes.map(({ path, component: Component }) => (
+            {routes.map(({ path, Component: Component }) => (
               <Route key={path} path={path} element={<Component />} />
             ))}
             {/* 👇 Esta es la diferencia */}
